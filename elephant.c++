@@ -1,25 +1,20 @@
 #include <iostream>
 using namespace std;
 
-int main(void)
+int main()
 {
-    int step, house;
-    
+    long int house, ans = 0;
     cin >> house;
-    
-    for (int i=5; i>0; i--)
+    int i = 5;
+    while (house)
     {
-        int rem = house % i;
-        step = house / i;
+        int temp = 0;
         
-        if (rem == 0)
-        {
-            cout << step;
-            return 0;
-        }
-        
-        house -= step * i;
-
+        temp = house / i;
+        ans += temp;
+        house %= i;
+        i--;
     }
-    
+    cout << ans << endl;
+    return 0;
 }
