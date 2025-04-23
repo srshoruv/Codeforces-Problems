@@ -1,8 +1,14 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!\n";
+    int testCase;
+    cin >> testCase;
+
+    while (testCase--)
+    {
+        
+    }
     return 0;
 }
