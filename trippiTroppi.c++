@@ -8,21 +8,16 @@ int main()
 
     while (testCase--)
     {
-        string s,s1;
-        int j = 0;
-        cin >> s;
+        string s,s1,s2,s3,ss1,ss2,ss3;
+        cin >> s1 >> s2 >> s3;
 
-        s[j] = s[0];
+        ss1 = s1[0];
+        ss2 = s2[0];
+        ss3 = s3[0];
 
-        for (int i=1; i<s.size(); i++)
-        {
-            if (s[i]== ' ')
-            {
-                s[++j] = s[++i];
-            }
-        }
-
-        cout << s1 << endl;
+        s = ss1+ss2+ss3;
+        cout << s << endl;
+    
     }
 
     return 0;
