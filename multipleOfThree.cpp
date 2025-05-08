@@ -14,7 +14,7 @@ int main() {
 
     	if (n % 3 == 0)
     	{
-    		cout << n * 3 << endl;
+    		cout << n << endl;
     	}
     	else if (n % 3 == 1)
     	{
